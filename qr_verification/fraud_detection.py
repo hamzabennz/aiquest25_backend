@@ -20,6 +20,8 @@ class FraudDetector(ABC):
         Check if the QR code data is suspicious
         Returns: (is_suspicious: bool, reason: str)
         """
+
+        # HERE IS THE BUSINESS LOGIC OF MODELS
         return (True, "Unknown")
 
 

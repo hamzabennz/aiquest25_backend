@@ -3,15 +3,12 @@
     "builds": [
         {
             "src": "qr_verification/wsgi.py",
-            "use": "@vercel/python",
-            "config": {
-                "buildCommand": "./build.sh"
-            }
+            "use": "@vercel/python"
         }
     ],
     "routes": [
         {
-            "src": "/(.*)",
+            "src": "/api/(.*)",
             "dest": "qr_verification/wsgi.py"
         }
     ]
