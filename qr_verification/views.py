@@ -14,6 +14,8 @@ class QRVerificationView(APIView):
     def post(self, request):
         data = request.data
 
+        print('Received data:', data)
+
         # Create QRCodeData instance
         qr_data = QRCodeData(
             url=data.get('url'),
