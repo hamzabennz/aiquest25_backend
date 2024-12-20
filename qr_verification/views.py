@@ -11,6 +11,11 @@ from qr_verification.fraud_detection import FraudDetector, QRCodeData
 from qr_verification.models import QRTransaction
 from qr_verification.serializers import QRVerificationSerializer
 
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse("Hello")
+
 class QRVerificationView(APIView):
     fraud_detector = None
     def __init__(self, fraud_detector: FraudDetector = None, **kwargs):
