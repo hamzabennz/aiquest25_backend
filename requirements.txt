@@ -1,0 +1,7 @@
+anyio==4.0.0
+django==5.0
+django-rest-framework==0.1.0
+gotrue==2.4.4
+grpcio==1.62.2
+requests==2.25.1
+django-cors-headers==4.4.0  
