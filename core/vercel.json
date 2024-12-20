@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "qr_verification/wsgi.py",
+            "use": "@vercel/python",
+            "config": {
+                "buildCommand": "./build.sh"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "qr_verification/wsgi.py"
+        }
+    ]
+}
